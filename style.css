@@ -1,0 +1,63 @@
+* {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --blue: hsl(228, 45%, 44%);
+
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+
+    ---BodyFontSize: 16px;
+    --FontFamily: [Young Serif](https://fonts.google.com/specimen/Young+Serif);
+    ---FontFamily: [Outfit](https://fonts.google.com/specimen/Outfit);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Nutrition Section */
+.nutrition-item-container {
+    width: 50%;
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 50px;
+} 
+
+.nutrition-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.value {
+    flex: 1;
+}
+
+hr {
+    margin: 5px 0px;
+    border: none;
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+
+/* Attribution Section */
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+
+.attribution a {
+    color: var(--blue)
+}
