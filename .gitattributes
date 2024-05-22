@@ -1,0 +1,19 @@
+# Auto detect text files and normalize them to LF
+* text=auto
+
+# Explicitly declare text files you want to always be normalized
+*.c text
+*.h text
+
+# Declare files that will always have CRLF line endings on checkout
+*.bat text eol=crlf
+
+# Declare files that will always have LF line endings on checkout
+*.sh text eol=lf
+
+# Denote all files that are truly binary and should not be modified
+*.png binary
+*.jpg binary
+
+# Ensure .gitignore uses CRLF line endings
+.gitignore text eol=crlf
