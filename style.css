@@ -10,21 +10,64 @@
     --WengeBrown: hsl(30, 10%, 34%);
     --DarkCharcoal: hsl(24, 5%, 18%);
 
-    ---BodyFontSize: 16px;
-    --FontFamily: [Young Serif](https://fonts.google.com/specimen/Young+Serif);
-    ---FontFamily: [Outfit](https://fonts.google.com/specimen/Outfit);
+    --HeadingFonts: "Young Serif", serif;
+    ---pgFonts: "Outfit", sans-serif;
 }
 
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: var(--Eggshell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: var(--HeadingFonts);
+    font-weight: lighter;
+}
+
+p, h3, li, .nutrition-item {
+    font-family: var(---pgFonts);
+}
+
+ul, ol {
+    padding-left: 20px; /* Create space for the bullets from the left side */
+}
+  
+li {
+    padding-left: 15px; /* Create space BETWEEN bullet points and the text */
+}
+
+.recipe-card {
+    background-color: var(--White);
+    width: 50%;
+    margin: 6rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Prep Section */
+.prepTime-container {
+    padding: 10px 0 10px 20px;
+    border-radius: 10px;
+    background-color: var(--RoseWhite);
+}
+
+.prepTime-container h3 {
+    color: var(--DarkRaspberry)
 }
 
 
 /* Nutrition Section */
 .nutrition-item-container {
-    width: 50%;
     margin: 0 auto; /* Center horizontally */
     margin-bottom: 50px;
 } 
@@ -55,7 +98,7 @@ hr {
 .attribution {
     font-size: 15px;
     text-align: center;
-    margin: 100px 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .attribution a {
