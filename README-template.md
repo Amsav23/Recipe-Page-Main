@@ -49,8 +49,9 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* Set the color for the bullet points and numbers */
+ul li::marker, ol li::marker {
+  color: var(--Nutmeg); /* Use your desired color variable */
 }
 ```
 ```js
@@ -58,6 +59,10 @@ const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```
+
+### Notes to Remember:
+
+**ul li::marker, ol li::marker:** Targets only the markers (bullets or numbers) in the list items. This approach ensures that only the bullet points and numbered list markers change color, while the text remains unaffected.
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 

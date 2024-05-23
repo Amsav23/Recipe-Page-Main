@@ -24,6 +24,8 @@ body {
     align-items: center;
 }
 
+
+/* Overall styling for headers and text */
 h1, h2 {
     font-family: var(--HeadingFonts);
     font-weight: lighter;
@@ -41,6 +43,33 @@ li {
     padding-left: 15px; /* Create space BETWEEN bullet points and the text */
 }
 
+
+/* Color Styling */
+/* Set the color for the BULLET POINTS and NUMBERED LISTS */
+.ingredients-container ul li::marker, ol li::marker {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+.prepTime-container ul li::marker {
+    color: var(--DarkRaspberry);
+}
+
+/* Keep the TEXT color separate from bullet points */
+h2, .value {
+    color: var(--Nutmeg);
+}
+
+p, li, .label {
+    color: var(--WengeBrown);
+}
+
+h1 {
+    color: var(--DarkCharcoal);
+}
+
+
+/* Styling the Recipe Card */
 .recipe-card {
     background-color: var(--White);
     width: 50%;
@@ -54,37 +83,50 @@ img {
     border-radius: 15px;
 }
 
+
 /* Prep Section */
 .prepTime-container {
     padding: 10px 0 10px 20px;
     border-radius: 10px;
     background-color: var(--RoseWhite);
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .prepTime-container h3 {
     color: var(--DarkRaspberry)
 }
 
+.prepTime-container li {
+    padding-bottom: 12px;
+}
+
+
+/* Ingredients and Instructions Section */
+.ingredients-container li, .instructions-container li {
+    padding-bottom: 12px;
+}
+
 
 /* Nutrition Section */
-.nutrition-item-container {
-    margin: 0 auto; /* Center horizontally */
-    margin-bottom: 50px;
-} 
+.nutrition-container p {
+    margin-bottom: 22px;
+}
 
 .nutrition-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .label {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 28px;
 }
 
 .value {
     flex: 1;
+    font-weight: 700;
 }
 
 hr {
