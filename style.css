@@ -146,3 +146,21 @@ hr {
 .attribution a {
     color: var(--blue)
 }
+
+
+/* Media Queries */
+@media screen and (max-width: 480px) /* Max-width sets breakpoints for larger screens */ {
+    body {
+        background-color: var(--White);
+    }
+
+    .recipe-card {
+        width: 85%;
+        margin: 0 0 20px 0;
+        border-radius: 0;
+    }
+
+    img {
+        border-radius: 0;
+    }
+}
